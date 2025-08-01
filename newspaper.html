@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <style>
+    .op-paperf {
+      max-width: 1300px;
+      min-width: 1300px;
+      height: 1130px;
+      border: 1px solid #000;
+      background: url('https://i.imgur.com/VZM5rxK.png');
+    }
+
+    /* Texto superior */
+    .paper-izs {
+      font-family: kokila;
+      font-size: 12px;
+      padding: 8px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+
+    .paper-izs .n {
+      display: block;
+      font-size: 14px;
+    }
+
+    .paper-izs .m {
+      font-size: 15px;
+    }
+
+    .paper-rigs {
+      font-family: kokila;
+      font-size: 14px;
+      text-align: right;
+      position: relative;
+      bottom: 28px;
+      right: 20px;
+      padding: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .paper-rigs .n {
+      display: block;
+    }
+
+    @font-face {
+      font-family: "kokila";
+      src: url('https://dl.dropbox.com/s/2qedvv0y0bgt3iz/kokila.ttf') format("truetype");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* Imagen central */
+    .cn-img {
+      width: 1250px;
+      height: 200px;
+      margin: auto;
+      position: relative;
+      bottom: 15px;
+    }
+
+    .cn-sub {
+      font-family: "haettenschweiler";
+      text-align: center;
+      font-size: 40px;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      color: #3a1706;
+      border-top: 3px solid #3a1706;
+      border-bottom: 3px solid #3a1706;
+      width: 1250px;
+      margin: auto;
+    }
+
+    @font-face {
+      font-family: "haettenschweiler";
+      src: url('https://dl.dropbox.com/s/dv8zec9kant56zs/Haettenschweiler-Regular.ttf') format("truetype");
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
+
+    /* Zona inferior Izquierda */
+    .izb-c {
+      border-right: 3px solid #3a1706;
+      height: 780px;
+      width: 300px;
+    }
+
+    .paper-izb {
+      font-family: "haettenschweiler";
+      font-size: 30px;
+      text-transform: uppercase;
+      padding: 8px;
+      text-align: center;
+      letter-spacing: 5px;
+    }
+
+    .sson-i {
+      width: 250px;
+      height: 100px;
+      margin: auto;
+      border: 3px solid #3a1706;
+    }
+
+    .sson-r,
+    .sson-r2,
+    .sson-r3,
+    .sson-r4 {
+      font-family: "gloucester";
+      text-align: center;
+      font-size: 25px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      padding-top: 4px;
+    }
+
+    .sson,
+    .sson2,
+    .sson3,
+    .sson4 {
+      font-family: "kokila";
+      text-align: center;
+      padding-top: 1px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #1a0b04;
+    }
+
+    @font-face {
+      font-family: "gloucester";
+      src: url('https://dl.dropbox.com/s/44etrx87l64kze8/GLECB.ttf') format("truetype");
+    }
+
+    /* Zona inferior Centro */
+    .ntc {
+      height: 780px;
+      width: 700px;
+      overflow: auto;
+    }
+
+    .ntc-c {
+      font-family: "haettenschweiler";
+      text-transform: uppercase;
+      font-size: 50px;
+      text-align: center;
+      letter-spacing: 3px;
+      color: #1a0b04;
+    }
+
+    .ntc-s1,
+    .ntc-s2,
+    .ntc-s3,
+    .ntc-s4 {
+      text-align: right;
+      font-family: "haettenschweiler";
+      font-size: 23px;
+      color: #1a0b04;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 7px;
+    }
+
+    .ntc-s4 {
+      text-align: left;
+    }
+
+    .ntc-t1,
+    .ntc-t2,
+    .ntc-t3,
+    .ntc-t4 {
+      text-align: justify;
+      padding: 8px;
+      font-family: "kokila";
+      font-size: 18px;
+      color: #1a0b04;
+      letter-spacing: 1px;
+    }
+
+    /* Zona Inferior Derecha */
+    .wym {
+      height: 770px;
+      width: 300px;
+      border-left: 3px solid #3a1706;
+    }
+
+    .wi {
+      width: 230px;
+      height: 300px;
+      margin: auto;
+      margin-top: 10px;
+    }
+
+    .wt {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "gloucester";
+      letter-spacing: 4px;
+      margin-top: 10px;
+      font-size: 30px;
+      font-weight: bold;
+      color: #1a0b04;
+    }
+
+    .lms {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "kokila";
+      letter-spacing: 2px;
+      font-size: 18px;
+    }
+
+    .lms a {
+      color: #1a0b04;
+      text-decoration: none;
+    }
+
+    .mi {
+      width: 230px;
+      height: 230px;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #212121;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #212121;
+    }
+
+    .sceditor-container iframe,
+    .sceditor-container textarea {
+      word-wrap: break-word;
+      white-space: pre-wrap;
+      word-break: normal;
+    }
+  </style>
+</head>
+<body>
+  <div class="op-paperf">
+    <div class="paper-izs">
+      <span class="m">Precio:</span> <span class="n">1.000.000 berries</span>
+    </div>
+
+    <div class="paper-rigs">
+      Septiembre-2021 <span class="n">https://op-ascension.foroactivo.com/</span>
+    </div>
+
+    <div class="cn-img" style="background: url('https://i.imgur.com/xMsPlgu.png')"></div>
+
+    <div class="cn-sub">
+      Periodico Oficial de One Piece Ascension
+    </div>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>
+            <!-- Columna Izquierda -->
+            <div class="izb-c">
+              <div class="paper-izb">Estaciones</div>
+
+              <div class="sson-i" style="background: url(https://i.imgur.com/B2196JP.png)"></div>
+              <div class="sson-r">Blues</div>
+              <div class="sson">Primavera</div>
+
+              <div class="sson-i" style="background: url(https://i.imgur.com/Rw9NLvd.png)"></div>
+              <div class="sson-r2">Grand Line</div>
+              <div class="sson2">Invierno</div>
+
+              <div class="sson-i" style="background: url(https://i.imgur.com/d1zXbBh.png)"></div>
+              <div class="sson-r3">Nuevo Mundo</div>
+              <div class="sson3">Otoño</div>
+
+              <div class="sson-i" style="background: url(https://i.imgur.com/F0vTbKk.png)"></div>
+              <div class="sson-r4">Mar Muerto</div>
+              <div class="sson4">Verano</div>
+            </div>
+          </td>
+
+          <td>
+            <!-- Columna Centro -->
+            <div class="ntc">
+              <div class="ntc-c">Últimas Noticias</div>
+              <!-- Aquí iría todo el contenido de noticias (no modificado) -->
+            </div>
+          </td>
+
+          <td>
+            <!-- Columna Derecha -->
+            <div class="wym">
+              <div class="wi" style="background: url(https://i.imgur.com/b8Lgnub.png)"></div>
+              <div class="wt">Wanteds</div>
+              <div class="lms">
+                <a href="https://op-ascension.foroactivo.com/h5-the-most-wanted">Los más buscados</a>
+              </div>
+
+              <div class="mi" style="background: url(https://i.imgur.com/ZFAYuYO.png)"></div>
+              <div class="wt">Mapas</div>
+              <div class="lms">
+                <a href="https://op-ascension.foroactivo.com/h3-mapa-mundi">¡A surcar los mares!</a>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

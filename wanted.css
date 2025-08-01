@@ -1,0 +1,105 @@
+.op-paperf{
+  max-width: 1300px;
+  min-width: 1300px;
+  height:auto;
+  border: 1px solid #000;
+  background: url('https://i.imgur.com/VZM5rxK.png');
+  padding-bottom: 15px}
+/*Texto superior*/
+.paper-izs{
+  font-family: kokila;
+  font-size: 12px;
+  padding: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.paper-izs n{display: block; font-size: 14px}
+.paper-izs m{font-size: 15px}
+.paper-rigs{
+  font-family: kokila;
+  font-size: 14px;
+  text-align: right;
+  position: relative;
+  bottom: 50px;
+  padding: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px
+}
+.paper-rigs n{display: block}
+@font-face {
+  font-family: "kokila";
+  src: url('https://dl.dropbox.com/s/2qedvv0y0bgt3iz/kokila.ttf?');
+}
+/*Imagen central*/
+.cn-img{
+  width: 1250px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  bottom: 35px
+}
+.cn-sub{
+  font-family: "haettenschweiler";
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: #3a1706;
+  border-top: 3px solid #3a1706;
+  border-bottom: 3px solid #3a1706;
+  width: 1250px;
+  margin: auto
+}
+@font-face {
+  font-family: "haettenschweiler";
+  src: url('https://dl.dropbox.com/s/dv8zec9kant56zs/Haettenschweiler-Regular.ttf');
+}
+/*titulo*/
+.wty{
+   font-family: "haettenschweiler";
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #3a1706;
+  width: auto;
+  border-bottom: 4px solid #3a1706;
+  margin-left: 30px;
+  margin-right: 20px;
+  letter-spacing: 2px;
+  margin-top: 58px;
+}
+/*carteles*/
+.wcn{
+  width:250px;
+  height: 344px;
+  margin-left: 5px;
+  margin-top: 5px;
+  display: inline-block;
+}
+.imw{
+  width: 147px;
+  height: 100px;
+  position: relative;
+  top: 105px;
+  left: 50px
+}
+.ncw{
+    font-family: "haettenschweiler";
+  font-size: 26px;
+  position: relative;
+  top: 113px;
+  padding-left: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.ppw{
+  position: relative;
+  top: 135px;
+  font-family: "argo";
+  font-size: 26px;
+  padding-left: 1px;
+  text-align: center;
+}
+@font-face {
+  font-family: "argo";
+  src: url('https://dl.dropbox.com/s/7xjtjzt4fdqqblr/ArgopuroScriptDemo.ttf');
+}
