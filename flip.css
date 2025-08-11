@@ -1,0 +1,50 @@
+:root { --flip-duration: 900ms; }
+
+/* Le da profundidad al giro 3D */
+html, body {
+  perspective: 2000px;
+}
+
+/* Hoja que se anima por encima de todo */
+#page-flip {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: #fff;
+  transform-origin: left center;
+  backface-visibility: hidden;
+  display: none; /* solo se muestra cuando vamos a navegar */
+}
+
+/* Sombras para que parezca papel */
+#page-flip::before,
+#page-flip::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+#page-flip::before {
+  background: linear-gradient(to right, rgba(0,0,0,.22), rgba(0,0,0,0) 35%);
+}
+
+#page-flip::after {
+  background: radial-gradient(120% 120% at 0% 50%, rgba(0,0,0,.18), transparent 60%);
+  mix-blend-mode: multiply;
+}
+
+body.flip-out #page-flip {
+  display: block;
+  animation: flipOut var(--flip-duration) ease-in forwards;
+}
+
+@keyframes flipOut {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(-180deg); }
+}
+
+/* Respeta accesibilidad: menos animación si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  :root { --flip-duration: 150ms; }
+}
